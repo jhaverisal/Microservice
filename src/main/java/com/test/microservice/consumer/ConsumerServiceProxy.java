@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.test.microservice.model.UserM;
 
-@FeignClient(name="user-service")
+@FeignClient(name="user-service",url="localhost:7000")
 @RibbonClient(name="user-service")
 public interface ConsumerServiceProxy {
 
